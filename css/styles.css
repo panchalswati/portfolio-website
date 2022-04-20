@@ -1,0 +1,176 @@
+:root {
+  --primary-color: #D3DEDC;
+  --secondary-color: #000;
+  --button-color: #42f587;
+  --weight:400;
+
+}
+body{
+font-family: 'Anek+Tamil';
+font-weight: var(--weight);
+line-height:1.3;
+background-color: var(--primary-color);
+}
+h1{
+font-size:30px;
+color:blue;
+font-weight:var(--weight);
+}
+a {
+  color: var(--secondary-color);
+
+}
+
+a:hover {
+    text-decoration: none;
+      }
+a:visited {
+    color: var(--secondary-color);
+}
+
+a:active {
+  color: var(--secondary-color);
+}
+.button, button {
+  display:inline-block;
+  background-color:var(--button-color) ;
+  color: green;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+  transition-duration: 0.9s;
+}
+a.button:hover{
+  background-color: gold;
+}
+
+.Portfolio_Logo{
+  position: relative;
+  top:20px;
+  left:20px;
+}
+.profile_text{
+  flex:1 1 100px;
+}
+p{
+  display:inline;
+}
+.social-media img{
+  background-color: lightblue;
+  padding:5px;
+}
+.profile{
+  align-items: center;
+  max-width: 800px;
+  padding:40px;
+  margin:0 auto;
+  height:auto;
+  }
+.Profile__Portfolio{
+  float:left;
+  width:250px;
+  margin-right:40px;
+  border-radius:50%;
+  padding-bottom: 30px;
+}
+.profile-skills{
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+.page-header{
+  display:flex;
+  width:100%;
+  padding:20px;
+  border:5px solid #FFEFEF ;
+}
+.page-footer{
+  clear:both;
+  display:flex;
+  text-align:center;
+  flex-direction: column;
+  border-top:5px solid #FFEFEF;
+}
+.page-header__item:last-child{
+  flex-grow: 1;
+  text-align:right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.grid__item {
+  display:inline-block;
+  width:auto;
+  min-height: auto;
+  background-color: lightgray;
+  padding:5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap: 20px;
+  margin: 0;
+}
+.grid__item:last-child {
+   grid-column: 3 / 3;
+   grid-row: 1 / 3;
+ }
+
+ @media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+@keyframes camels {
+ from {
+   transform: translate(0, 50px);
+ }
+ to {
+   transform: translate(400px, 50px);
+ }
+}
+.camel-ride img{
+    animation: 34s camels infinite alternate linear;
+
+}
