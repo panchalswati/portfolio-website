@@ -1,7 +1,7 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
 * Browsers: last 4 version
 */
 
@@ -16,20 +16,16 @@ font-size:30px;
 color:blue;
 font-weight:400;
 }
-a {
-  color: #000;
-
-}
 
 a:hover {
     text-decoration: none;
       }
 a:visited {
-    color: #000;
+    color: #008000;
 }
 
 a:active {
-  color: #000;
+  color: #008000;
 }
 .button {
   display:inline-block;
@@ -63,6 +59,30 @@ button {
 }
 a.button:hover{
   background-color: gold;
+}
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+}
+
+.html {
+  width: 95%; background-color: #04AA6D;
+}
+.css {
+  width: 90%; background-color: #2196F3;
+}
+.js {
+  width: 65%; background-color: #f44336;
+}
+.Java {
+  width: 90%; background-color: #808080;
 }
 
 .Portfolio_Logo{

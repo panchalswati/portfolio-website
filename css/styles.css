@@ -1,6 +1,6 @@
 :root {
   --primary-color: #D3DEDC;
-  --secondary-color: #000;
+  --secondary-color: 	#008000;
   --button-color: #42f587;
   --weight:400;
 
@@ -15,10 +15,6 @@ h1{
 font-size:30px;
 color:blue;
 font-weight:var(--weight);
-}
-a {
-  color: var(--secondary-color);
-
 }
 
 a:hover {
@@ -44,6 +40,30 @@ a:active {
 }
 a.button:hover{
   background-color: gold;
+}
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+}
+
+.html {
+  width: 95%; background-color: #04AA6D;
+}
+.css {
+  width: 90%; background-color: #2196F3;
+}
+.js {
+  width: 65%; background-color: #f44336;
+}
+.Java {
+  width: 90%; background-color: #808080;
 }
 
 .Portfolio_Logo{
