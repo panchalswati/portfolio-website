@@ -4,14 +4,14 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Contact details</title>
-  <link rel="shortcut icon" href="favicon-32x32"/>
+  <link rel="shortcut icon" href="img/favicon-32x32.png"/>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@400,700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.production.css"/>
 </head>
 <body>
   <header class="page-header">
-  <img src="img/portfolio-logo.png" alt="Portfolio_Logo">
+  <img src="img/portfolio-logo.png" alt="Portfolio_Logo" class="page-header__item">
   <nav class="page_navigation page-header__item">
     <ul role="menubar" class="navigation-list">
       <li role="presentation">
@@ -38,14 +38,17 @@
   30275162 Hannover<br>
   Deutschland<br>
     <br>
-    <form action="#" method="post"  id="contact-form">
-      <label class="standard-label" for="contact-email">Email:</label>
-      <input type="email" placeholder="xyz@dummy-email.com" id="contact-email" required><br>
-      <label class="standard-label" for="telephone">Telephone: </label>
-      <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890" id="telephone" required><br>
-      <label class="standard-label" for="message">Message: </label>
-      <textarea  maxlength="240" required id="message"></textarea><br>
-      <input type="submit" value="Send message" onclick="alert('Successfully submitted')"><br>
+    <form id="contact-form">
+      <div class="input-wrapper">
+      <label for="contact-email">Email:</label>
+      <input id="contact-email"><br></div>
+      <div class="input-wrapper">
+      <label for="telephone">Telephone: </label>
+      <input id="telephone"><br></div>
+      <label for="message">Message: </label>
+      <textarea  maxlength="240" id="message"></textarea><br>
+      <br>
+      <button>Submit</button>
     </form>
     <br>
   </div>
@@ -63,6 +66,7 @@
       <img src="img/linkedin.svg" alt="linkedIn"/></a>
     </div>
 </footer>
+<script src="js/script.js"></script>
 <script src="js/tota11y.min.js"></script>
 </body>
 </html>
