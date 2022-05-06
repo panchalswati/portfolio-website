@@ -17,6 +17,12 @@ font-size:30px;
 color:blue;
 font-weight:400;
 }
+.input-wrapper{
+  margin-botton:10px;
+}
+a{
+  text-decoration: transparent;
+}
 
 a:hover {
     text-decoration: none;
@@ -26,7 +32,8 @@ a:visited {
 }
 
 a:active {
-  color: #008000;
+  color: blue;
+  text-decoration:underline;
 
 }
 .button {
@@ -62,6 +69,7 @@ button {
 a.button:hover{
   background-color: gold;
 }
+
 .container {
   width: 100%;
 
@@ -90,9 +98,10 @@ a.button:hover{
 
 .Portfolio_Logo{
   position: relative;
-  top:20px;
-  left:20px;
-}
+  top:2px;
+  left:5px;
+  height:5px;
+  }
 .profile_text{
   -webkit-box-flex:1;
       -ms-flex:1 1 100px;
@@ -102,7 +111,6 @@ a.button:hover{
   text-align: center;
 }
 p{
-
   display:inline;
 }
 .social-media img{
@@ -140,6 +148,7 @@ p{
   display:-ms-flexbox;
   display:flex;
   width:100%;
+  height:110px;
   padding:20px;
   border:5px solid #FFEFEF ;
 }
@@ -160,11 +169,17 @@ p{
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align:right;
-  color:#008000
+  color:#008000;
+
+
+}
+.page-header__item{
+  width:130px;
+  height:100px;
 }
 
-.navigation-list {
-  list-style-type: none;
+.navigation-list__item {
+  color:blue;
 
 }
 
@@ -259,4 +274,8 @@ button:focus,
     -webkit-animation: 34s camels infinite alternate linear;
             animation: 34s camels infinite alternate linear;
 
+}
+.error-message{
+  color:red;
+  font-size:0.6em;
 }
